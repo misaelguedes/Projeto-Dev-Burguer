@@ -48,6 +48,17 @@ function addToCart(name, price) {
             price,
             quantity: 1
         })
+        Toastify({
+            text: "ÍTEM ADICIONADO AO CARRINHO!",
+            duration: 3000,
+            close: true,
+            gravity: "top",
+            position: "right",
+            stopOnFocus: true,
+            style: {
+              background: "rgb(34 197 94)",
+            },
+        }).showToast();
     }
 
     updateCartModal()
